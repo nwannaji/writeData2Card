@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_Firstname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Firstname" />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/et_Firstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/baseline_photo_camera_24" />
+
+    <Button
+        android:id="@+id/btnSelectPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/camera"
+        android:layout_marginTop="30dp"
+        android:text="Take Photo" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/btnSelectPhoto"
+        android:layout_marginTop="30dp"
+        android:text="Save" />
+
+
+</LinearLayout>
